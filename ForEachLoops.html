@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Each</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var car = ["car1","car2","car3"];
+
+    car.forEach(cars);
+    function cars(item,index,array)
+    {
+        car[index]=item + "0";
+    }
+    car.forEach(after);
+    function after(item,index)
+    {
+       document.writeln(index + " => " + item + "<br>");
+    }
+</script>
+</html>

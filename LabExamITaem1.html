@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>
+    LAB EXAM
+   </title>
+</head>
+<body>
+    <table border="1px" >
+        <tr >
+            <td colspan="3">
+               <pre>             Books About Computing              </pre>
+            </td>
+        </tr>
+        <tr>
+           <td class="title">
+            Tittle
+           </td>
+           <td class="prentice-hall">
+            Publisher
+           </td>
+           <td>
+            Author
+           </td>
+        </tr>
+        <tr>
+            <td class="title">
+                <!-- Assembly Language And Programing -->
+            </td>
+            <td class=" prentice-hall">
+                <!-- PHI -->
+            </td>
+            <td>
+                Abel,P.
+            </td>
+        </tr>
+        <tr>
+            <td class="title">
+                <!-- Object-Oriented Analysis And Design -->
+            </td>
+            <td class="prentice-hall">
+                <!-- Addison-Wesley -->
+            </td>
+            <td>
+                Booch,G
+            </td>
+        </tr>
+    </table>
+    <button id="A"> Get Tittle</button>
+    <button id="B">Get Publiser class</button>
+</body>
+<script>
+    document.getElementById("A").addEventListener("click",titlee)
+function titlee()
+{
+    document.getElementsByClassName("title")[1].innerHTML = "Assembly Language And Programing";
+     document.getElementsByClassName("title")[2].innerHTML ="Object-Oriented Analysis And Design";
+}
+document.getElementById("B").addEventListener("click",publiser)
+function publiser()
+{
+    document.getElementsByClassName("prentice-hall")[1].innerHTML="PHI";
+     document.getElementsByClassName("prentice-hall")[2].innerHTML="Addison-Wesley";
+}
+</script>
+</html>

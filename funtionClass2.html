@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparison of Array</title>
+</head>
+<body>
+     <button id="raj"> click me</button>
+    <div id="abhay">
+
+    </div>
+   
+</body>
+<script>
+    document.getElementById("raj").addEventListener("click",compare);
+    function compare()
+    {
+    var arr = ["banana","apple","mango","pineaple","guvava"];
+    var longest = arr[0];
+
+    for (var i=1;i<arr.length;i++)
+    {
+        if (arr[i].length>longest.length)
+    {
+        longest=arr[i];
+    }
+    }
+        document.getElementById("abhay").innerHTML=longest;
+
+
+        document.getElementById("raj").style.display = "none";
+    }
+</script>
+</html>

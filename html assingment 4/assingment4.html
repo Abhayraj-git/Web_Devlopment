@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assingment4.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="Abhay">
+        <div id="first">
+            <img src="logo.jpg" width="220" alt="IIIT KOTTAYAM LOGO">
+        </div>
+        <div id="second" style="border: solid orange"><h2 >Indian Institute of Information Technology Kottayam</h2></div>
+    </div>
+    <div class="Raj">
+        <div id="third"><h4>Certificate No : 20023/1001/A</h4></div>
+<div id="fourth"><h4>Register No: 2020BCS0295</h4></div>
+    </div>
+    <div class="gupta">
+        <div id="fifth">
+        <h3 style="font-style: italic; margin-left: 1400px;"> 
+       <u> Student Marks Memo </u></h3>
+    </h3>
+        </div>
+        <div id="pic"> Student <br> Photo</div>
+    </div>
+    <div id="table">
+        <label for="x">The mark sheet is awarded to :</label>
+        <input type="text" id="x"><br><br>
+        <label for="y">On successful completion of course:</label> 
+        <input type="text" id="y"><br><br>
+        <label for="z">On Duration:</label>
+        <input type="text" id="z"><br><br>
+        <label for="a">From Our Authorized Training Center:</label>
+        <input type="text" id="a">
+        <br>
+        <br><br><br>
+        <table style="border: 1px solid;">
+           <tr style= "background-color: rgb(80, 194, 80);">
+            <th>
+                S.No
+            </th>
+            <th>
+                Subject Offered 
+            </th>
+            <th colspan="3">
+               Full Marks
+            </th>
+            <th colspan="3">
+                Marks Obtained
+            </th>
+           </tr>
+           <tr>
+            <td>
+                
+            </td>
+            <td>
+
+            </td>
+            <td>
+                Theory
+            </td>
+            <td>
+                Lab
+            </td>
+            <td>
+                Total
+            </td>
+            <td>
+                Theory
+            </td>
+            <td>
+                Lab
+            </td>
+            <td>
+                Total
+            </td>
+           </tr>
+           <tr>
+            <td>
+                CS1
+            </td>
+            <td>
+                C
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+               <input type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+           </tr>
+           <tr>
+            <td>
+              CS2
+            </td>
+            <td>
+                C++
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                 <input type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+           </tr>
+           <tr>
+            <td>
+                CS3
+            </td>
+            <td>
+                Java
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                <input type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+           </tr>
+           <tr>
+            <td>
+                CS4
+            </td>
+            <td>
+                Python
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                 <input type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <tr>
+                <td>
+                    CS5
+                </td>
+                <td>
+                    Go
+                </td>
+                <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                <input type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    CS6
+                </td>
+                <td>
+                    Rust
+                </td>
+                <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                <input type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            </tr>
+           </tr>
+        </table>
+    </div>
+    <button style="background-color: rgb(130, 130, 235); margin-left: 1545px; border-radius: 8px; margin-top: 10px;">submit</button><br><br>
+    <br><br>
+<label style="margin-left: 700px;">Total:</label>
+<input type="text" id="finalTotal" readonly>
+
+<label style="margin-left: 100px;">Average:</label>
+<input type="text" id="avg" readonly>
+
+    <script>
+
+    function calculateTotals() {
+
+        let grandTotal = 0;
+        let subjects = 6;   // CS1–CS6
+
+        for (let i = 0; i < subjects; i++) {
+
+            // Get theory & lab input boxes by row index
+            let th = document.querySelectorAll("table input[type='text']")[i*3].value;
+            let lab = document.querySelectorAll("table input[type='text']")[i*3 + 1].value;
+            let totalBox = document.querySelectorAll("table input[type='text']")[i*3 + 2];
+
+            th = Number(th);
+            lab = Number(lab);
+
+            let sum = th + lab;
+
+            // Validate
+            if (sum > 100) {
+                alert("Total marks of each subject should be LESS THAN or EQUAL to 100");
+                totalBox.value = "";
+                return;
+            }
+
+            // Fill total column
+            totalBox.value = sum;
+
+            grandTotal += sum;
+        }
+
+        // Display in textboxes (You can add these boxes if needed)
+        let finalTotalBox = document.getElementById("finalTotal");
+        let avgBox = document.getElementById("avg");
+
+        if (finalTotalBox)
+            finalTotalBox.value = grandTotal;
+
+        if (avgBox)
+            avgBox.value = (grandTotal / subjects).toFixed(2);
+    }
+
+    // Attach JS to your existing button
+    document.querySelector("button").addEventListener("click", calculateTotals);
+
+</script>
+
+</body>
+</html>

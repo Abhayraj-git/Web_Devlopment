@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Working on Array</title>
+</head>
+<body>
+    <input type="text" id="text1"></input>
+    <input type="button" id="button1" value="Add">
+    <input type="button" id="button2" value="display">
+    <div id="result">
+
+    </div>
+</body>
+<script>
+    var x =0 ;
+    var array = [];
+    document.getElementById("button1").addEventListener("click",adding)
+    function adding ()
+    {
+        array[x] = document.getElementById("text1").value;
+        x++;
+        document.getElementById("text1").value = "";
+    }
+    document.getElementById("button2").addEventListener("click",display)
+    function display ()
+    {
+        var e = "<hr/>";
+        for ( var y = 0; y<array.length;y++)
+    {
+        e += "Element " + y + "= " + array[y] + "<br/>";
+    }
+        document.getElementById("result").innerHTML=e;
+    }
+</script>
+</html>

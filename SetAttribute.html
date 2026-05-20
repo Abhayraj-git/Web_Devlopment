@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImg"
+     src="flower.jpg"
+     alt="Flower Image"
+     width="200">
+
+<br><br>
+<button onclick="changeImage()">Change Image</button>
+
+<script>
+function changeImage() {
+    var img = document.getElementById("myImg");
+
+    img.setAttribute("src", "nature.jpg");
+    img.setAttribute("alt", "Nature Image");
+}
+</script>
+
+</body>
+</html>

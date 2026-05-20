@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Funtion </title>
+</head>
+<body>
+    <input type="text" id="hello">
+    <button onclick="greet()">
+        greet
+    </button>
+    <div class="name">
+
+    </div>
+</body>
+<script type="text/javascript">
+    function greet ()
+    {
+     var name = document.getElementById("hello").value;
+     var string = "Hello" + name ;
+     document.getElementsByClassName("name")[0].innerHTML=string;
+    }
+</script>
+</html>

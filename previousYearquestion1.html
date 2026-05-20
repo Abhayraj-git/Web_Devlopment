@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>previous year question</title>
+</head>
+<body>
+    <input type="text" id="x"></input><br>
+    <button id="submitbtn">Submit</button><br><br>
+    <button id="small">Samllest</button>
+    <button id="large">Largest</button>
+    <div id="smallest">
+
+    </div>
+    <p id="largest">
+
+    </p>
+</body>
+<script>
+    var x =0;
+    var arr = [];
+    document.getElementById("submitbtn").addEventListener("click",taking);
+    function taking()
+    {
+      arr[x] = document.getElementById("x").value;
+      x++;
+      if (x<10)
+      {
+      document.getElementById("x").value = "";
+      }
+    }
+    document.getElementById("small").addEventListener("click",storingsmall);
+    function storingsmall()
+    {
+        for (var i =0 ; i<arr.length;i++)
+    {
+        document.getElementById("smallest").innerHTML=arr[i];
+    }
+        var smallst = arr[0];
+         for (var i =1 ; i<arr.length;i++)
+         {
+            if (smallst>arr[i])
+         {
+            smallst = arr[i];
+         }
+         }
+         document.getElementById("smallest").innerHTML=smallst;
+    }
+    document.getElementById("large").addEventListener("click",storinglarge);
+    function storinglarge()
+    {
+        for (var i =0 ; i<arr.length;i++)
+    {
+        document.getElementById("largest").innerHTML=arr[i];
+    }
+        var largst = arr[0];
+         for (var i =1 ; i<arr.length;i++)
+         {
+            if (arr[i]>largst)
+         {
+            largst = arr[i];
+         }
+         }
+         document.getElementById("largest").innerHTML=largst;
+    }
+</script>
+</html>

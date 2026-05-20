@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New file</title>
+</head>
+<body>
+ <button onclick="addMessage()">Add Message</button>
+<div id="messages"></div>
+</body>
+
+
+<script>
+function addMessage() {
+    // create a new paragraph
+    var p = document.createElement("p");
+
+    // create text
+    var txt = document.createTextNode("Hello! This is a new message.");
+
+    // attach text to paragraph
+    p.appendChild(txt);
+
+    // attach paragraph to messages div
+    document.getElementById("messages").appendChild(p);
+}
+</script>
+
+</html>

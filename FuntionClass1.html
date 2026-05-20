@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparison</title>
+</head>
+<body>
+    <h3>
+        if want to campare two number then :-
+    </h3>
+
+    <input type="number" id="first">
+    &
+    <input type="number" id="second"><br>
+    <button id="xyz">
+        click me 
+    </button>
+    <br><br>
+    <p id="third"></p>
+    
+</body>
+<script>
+    document.getElementById("xyz").addEventListener("click", compare);
+    function compare ()
+    {
+      var x =  parseInt(document.getElementById("first").value)
+       var y =  parseInt(document.getElementById("second").value)
+            if (x>y)
+            {
+                document.getElementById("third").innerHTML=x;
+            }
+            else
+            {
+                document.getElementById("third").innerHTML=y;
+            }
+    }
+</script>
+</html>

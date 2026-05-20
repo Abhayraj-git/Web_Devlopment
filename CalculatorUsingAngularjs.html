@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html  ng-app>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/angular.min.js">  </script>
+<script>
+  function cal($scope)
+  {
+    $scope.add=function()
+    {
+      $scope.result=$scope.a+$scope.b;
+    };
+    $scope.subtract=function()
+    {
+      $scope.result=$scope.a-$scope.b;
+    };
+
+    $scope.multiply=function()
+    {
+      $scope.result=$scope.a*$scope.b;
+    };
+    $scope.divide=function()
+    {
+      $scope.result=$scope.a/$scope.b;
+    };};
+</script>
+</head>
+<body ng-controller="cal">
+  <label>enter a:</label>
+  <input type="number" ng-model="a">
+  <br>
+  <label>enter b:</label> 
+  <input type="number" ng-model="b">
+  <br>
+  <button ng-click="add()">add</button>
+  <button ng-click="subtract()">sub</button>
+
+<button ng-click="multiply()">multiply</button>
+<button ng-click="divide()">divide</button>
+<h3>result: {{result}}</h3>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <script src="js/angular.min.js"></script>
+
+  <script>
+    var app = angular.module("myApp", []);
+
+    app.controller("cal", function ($scope) {
+
+      $scope.add = function () {
+        $scope.result = $scope.a + $scope.b;
+      };
+
+      $scope.subtract = function () {
+        $scope.result = $scope.a - $scope.b;
+      };
+
+      $scope.multiply = function () {
+        $scope.result = $scope.a * $scope.b;
+      };
+
+      $scope.divide = function () {
+        if ($scope.b == 0)
+          $scope.result = "Cannot divide by zero";
+        else
+          $scope.result = $scope.a / $scope.b;
+      };
+
+    });
+  </script>
+</head>
+
+<body ng-controller="cal">
+
+  <label>Enter a:</label>
+  <input type="number" ng-model="a">
+  <br>
+
+  <label>Enter b:</label>
+  <input type="number" ng-model="b">
+  <br><br>
+
+  <button ng-click="add()">Add</button>
+  <button ng-click="subtract()">Sub</button>
+  <button ng-click="multiply()">Multiply</button>
+  <button ng-click="divide()">Divide</button>
+
+  <h3>Result: {{result}}</h3>
+
+</body>
+</html>

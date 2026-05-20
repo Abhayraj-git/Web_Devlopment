@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks evalution</title>
+</head>
+<body>
+    <br> Marks which are in odd position : 
+    <div id="odd">
+   
+    </div>
+    <br>  Marks which are in even position : 
+    <div id="even">
+  
+    </div>
+    <br> The first and Last Marks are :
+    <div id="firstandlast">
+   
+    </div>
+   <br> The total score is : 
+    <div id="total">
+     
+    </div>
+    <button id="cal">Proceed</button>
+</body>
+<script>
+    document.getElementById("cal").addEventListener("click",calculate)
+     var student = {Name : 'Smith',RollNo: '2024XXX0024',SubjectMarks: [86.666,87.856,84.567,83.4563,85.543,86.2356]}
+    function calculate ()
+    {
+    document.getElementById("odd").innerHTML=student.SubjectMarks[1] +" , " +student.SubjectMarks[3]+" , " +student.SubjectMarks[5];
+    document.getElementById("even").innerHTML=student.SubjectMarks[0]+" , " +student.SubjectMarks[2]+" , " +student.SubjectMarks[4];
+    document.getElementById("firstandlast").innerHTML=student.SubjectMarks[0]+" , " +student.SubjectMarks[5];
+    document.getElementById("total").innerHTML=student.SubjectMarks[0]+student.SubjectMarks[5]+student.SubjectMarks[1]+student.SubjectMarks[2]+student.SubjectMarks[3]+student.SubjectMarks[4];
+    }
+</script>
+</html>

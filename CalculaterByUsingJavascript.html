@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="number" step="any" id="first">
+    <select name="" id="xyz">
+        <option value="+">
+            +
+        </option>
+        <option value="-">
+            -
+        </option>
+        <option value="*">
+            *
+        </option>
+        <option value="/">
+            /
+        </option>
+    </select>
+    <input type="number" step="any" id="second">
+    <button id="fourth" onclick="calculate()">Enter</button>
+    <div id="Raj">
+
+    </div>
+</body>
+<script type="text/javascript">
+function calculate()
+{
+  var x = Number(document.getElementById("first").value);
+  var y = document.getElementById("xyz").value;
+  var z = Number(document.getElementById("second").value);
+  var cal;
+  if (y=='+')
+  {
+   cal = x + z;
+  }
+  if (y=='-')
+  {
+   cal = x - z;
+  }
+  if (y=='*')
+  {
+   cal = x * z;
+  }
+  if (y=='/')
+  {
+   cal = x / z;
+  }
+  document.getElementById("Raj").innerHTML=cal;
+}
+</script>
+</html>

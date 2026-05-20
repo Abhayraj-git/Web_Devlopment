@@ -1,0 +1,56 @@
+body{
+    zoom: 1.4;
+}
+.Abhay
+{
+display: flex; 
+align-items: center;
+justify-content: center;
+
+}
+#second {
+    margin-left: 300px;
+    padding: 40px;
+}
+
+#first {
+    margin-left: 10px;
+}
+.Raj{
+    display: flex;
+
+}
+#fourth{
+    margin-left: 1500px;
+}
+#third
+{
+    margin-left: 700px;
+}
+.gupta
+{
+    width: 2500px;
+    height: 200px;
+    display: flex;
+
+}
+#pic
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 730px;
+}
+#table
+{
+     margin-left: 700px;
+     
+}
+th, td {
+        border: 1px solid #000;
+            padding: 4px;
+            text-align: center;
+}

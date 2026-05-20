@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImg"
+     src="flower.jpg"
+     alt="Beautiful Flower"
+     width="200"
+     height="150">
+
+<br><br>
+<button onclick="getImageAttr()">Get Image Attributes</button>
+
+<script>
+function getImageAttr() {
+    var img = document.getElementById("myImg");
+
+    var srcValue = img.getAttribute("src");
+    var altValue = img.getAttribute("alt");
+    var widthValue = img.getAttribute("width");
+
+    alert(
+      "Source: " + srcValue +
+      "\nAlt text: " + altValue +
+      "\nWidth: " + widthValue
+    );
+}
+</script>
+
+</body>
+</html>
