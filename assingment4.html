@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+    zoom: 1.8;
+
+}
+.Abhay
+{
+display: flex; 
+align-items: center;
+justify-content: center;
+
+}
+#second {
+    margin-left: 300px;
+    padding: 40px;
+}
+
+#first {
+    margin-left: 10px;
+}
+.Raj{
+    display: flex;
+    justify-content: center;
+
+    
+}
+#fourth{
+    margin-left: 750px;
+}
+#third
+{
+    margin-left: 70px;
+}
+.gupta
+{
+    width: 2500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#pic
+{
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 380px;
+}
+#table
+{
+     margin-left: 1100px;
+     
+}
+th, td {
+        border: 1px solid #000;
+            padding: 4px;
+            text-align: center;
+}
+    </style>
+    <title>Profile</title>
+</head>
+<body>
+    <div class="Abhay">
+        <div id="first">
+            <img src="logo.jpg" width="220" alt="IIIT KOTTAYAM LOGO">
+        </div>
+        <div id="second" style="border: solid orange"><h2 >Indian Institute of Information Technology Kottayam <br>Valavoor P.O., Pala, Kottayam, Kerala - 686 635, India</h2></div>
+    </div>
+    <div class="Raj">
+        <div id="third"><h4>Certificate No : 20023/1001/A</h4></div>
+<div id="fourth"><h4>Register No: 2020BCS0295</h4></div>
+    </div>
+    <div class="gupta">
+        <div id="fifth">
+        <h3 style="font-style: italic; margin-left: 1300px;"> 
+       <u> Student Marks Memo </u></h3>
+    </h3>
+        </div>
+        <div id="pic"> Student <br> Photo</div>
+    </div>
+    <div id="table">
+        <label for="x">The mark sheet is awarded to :</label>
+        <input type="text" id="x"><br><br>
+        <label for="y">On successful completion of course:</label> 
+        <input type="text" id="y"><br><br>
+        <label for="z">On Duration:</label>
+        <input type="text" id="z"><br><br>
+        <label for="a">From Our Authorized Training Center:</label>
+        <input type="text" id="a">
+        <br>
+        <br><br><br>
+        <table id="marksTable" style="border: 1px solid;">
+           <tr style= "background-color: rgb(80, 194, 80);">
+            <th>
+                S.No
+            </th>
+            <th>
+                Subject Offered 
+            </th>
+            <th colspan="3">
+               Full Marks
+            </th>
+            <th colspan="3">
+                Marks Obtained
+            </th>
+           </tr>
+           <tr>
+            <td>
+                
+            </td>
+            <td>
+
+            </td>
+            <td>
+                Theory
+            </td>
+            <td>
+                Lab
+            </td>
+            <td>
+                Total
+            </td>
+            <td>
+                Theory
+            </td>
+            <td>
+                Lab
+            </td>
+            <td>
+                Total
+            </td>
+           </tr>
+           <tr>
+            <td>
+                CS1
+            </td>
+            <td>
+                C
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+               <input class="theory" type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input class="lab" type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input class="total" type="text">
+            </td>
+           </tr>
+           <tr>
+            <td>
+              CS2
+            </td>
+            <td>
+                C++
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                 <input class="theory" type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input class="lab" type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input class="total" type="text">
+            </td>
+           </tr>
+           <tr>
+            <td>
+                CS3
+            </td>
+            <td>
+                Java
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                <input class="theory" type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input class="lab" type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input class="total" type="text">
+            </td>
+           </tr>
+           <tr>
+            <td>
+                CS4
+            </td>
+            <td>
+                Python
+            </td>
+            <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                 <input class="theory" type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input class="lab" type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input class="total" type="text">
+            </td>
+            <tr>
+                <td>
+                    CS5
+                </td>
+                <td>
+                    Go
+                </td>
+                <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                <input class="theory" type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input class="lab" type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input class="total" type="text">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    CS6
+                </td>
+                <td>
+                    Rust
+                </td>
+                <td>
+                70
+            </td>
+            <td>
+                30
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                <input class="theory" type="number" max="70" oninput="this.reportValidity()">
+            </td>
+            <td>
+                 <input class="lab" type="number" max="30" oninput="this.reportValidity()">
+            </td>
+            <td>
+                <input class="total" type="text">
+            </td>
+            </tr>
+           </tr>
+        </table>
+    </div>
+    <button id="submitBtn" style="background-color: rgb(130, 130, 235); margin-left: 1825px; border-radius: 8px; margin-top: 10px;">submit</button><br><br>
+    <br><br>
+<label style="margin-left: 1100px;">Total:</label>
+<input type="text" id="finalTotal" readonly>
+
+<label style="margin-left: 100px;">Average:</label>
+<input type="text" id="avg" readonly>
+<script>
+function calculateTotals() {
+
+    const rows = document.querySelectorAll("#marksTable tr:not(:first-child):not(:nth-child(2))");
+    let grandTotal = 0;
+    let subjects = rows.length;
+
+    rows.forEach(row => {
+
+        const th = Number(row.querySelector(".theory").value) || 0;
+        const lab = Number(row.querySelector(".lab").value) || 0;
+        const totalBox = row.querySelector(".total");
+
+        // Max validation
+        if (th > 70 || lab > 30) {
+            alert("Theory marks must be ≤ 70 and Lab marks must be ≤ 30");
+            totalBox.value = "";
+            return;
+        }
+
+        const sum = th + lab;
+
+        // Total validation
+        if (sum > 100) {
+            alert("Total marks of each subject must be ≤ 100");
+            totalBox.value = "";
+            return;
+        }
+
+        totalBox.value = sum;
+        grandTotal += sum;
+    });
+
+    document.getElementById("finalTotal").value = grandTotal;
+    document.getElementById("avg").value = (grandTotal / subjects).toFixed(2);
+}
+
+document.getElementById("submitBtn")
+        .addEventListener("click", calculateTotals);
+</script>
+</body>
+</html>

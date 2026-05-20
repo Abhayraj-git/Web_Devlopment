@@ -1,0 +1,22 @@
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .Abhay{
+    align-items: center;
+    text-align: center;
+ }
+ .Raj{
+    justify-content:space-between;
+    align-items: center;
+    display: flex;  
+ }
+ .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}

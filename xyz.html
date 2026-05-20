@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Memo</title>
+    <style>
+        body{font-family:Arial;}
+        table{border-collapse:collapse;width:100%;}
+        td,th{border:1px solid #000;padding:5px;text-align:center;}
+        .header{text-align:center;font-size:18px;font-weight:bold;margin-bottom:10px;}
+        .sub-head{text-align:center;font-size:20px;font-style:italic;margin-bottom:20px;}
+        .green-head{background:#8BC34A;color:#000;font-weight:bold;}
+        .container{width:90%;margin:auto;}
+        .right{float:right;}
+        input[type=text]{width:150px;padding:3px;}
+        #submit{padding:8px 20px;background:#0b63d1;color:#fff;border:none;border-radius:5px;cursor:pointer;}
+    </style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">Indian Institute of Information Technology, Kottayam<br>Valavoor P.O., Pala, Kottayam, Kerala - 686 635, India</div>
+
+Certificate No:20023/1001/A
+<span class="right">Register No: 2025BCS0295</span>
+
+<div class="sub-head">Student Marks Memo</div>
+
+This mark sheet is awarded to: <input type="text" id="name"><br><br>
+On successful completion of course: <input type="text" id="course"><br><br>
+On Duration: <input type="text" id="duration"><br><br>
+From Our Authorized Training Center: <input type="text" id="center"><br><br>
+
+<table>
+    <tr class="green-head">
+        <th>S.No</th><th>Subject Offered</th>
+        <th colspan="3">Full Marks</th>
+        <th colspan="3">Marks Obtained</th>
+    </tr>
+    <tr class="green-head">
+        <th></th><th></th>
+        <th>Theory</th><th>Lab</th><th>Total</th>
+        <th>Theory</th><th>Lab</th><th>Total</th>
+    </tr>
+
+    <tr>
+        <td>CS1</td><td>C</td><td>70</td><td>30</td><td>100</td>
+        <td><input type="text" class="t"></td>
+        <td><input type="text" class="l"></td>
+        <td><input type="text" class="tot" readonly></td>
+    </tr>
+
+    <tr>
+        <td>CS2</td><td>C++</td><td>70</td><td>30</td><td>100</td>
+        <td><input type="text" class="t"></td>
+        <td><input type="text" class="l"></td>
+        <td><input type="text" class="tot" readonly></td>
+    </tr>
+
+    <tr>
+        <td>CS3</td><td>Java</td><td>70</td><td>30</td><td>100</td>
+        <td><input type="text" class="t"></td>
+        <td><input type="text" class="l"></td>
+        <td><input type="text" class="tot" readonly></td>
+    </tr>
+
+    <tr>
+        <td>CS4</td><td>Python</td><td>70</td><td>30</td><td>100</td>
+        <td><input type="text" class="t"></td>
+        <td><input type="text" class="l"></td>
+        <td><input type="text" class="tot" readonly></td>
+    </tr>
+
+    <tr>
+        <td>CS5</td><td>Go</td><td>70</td><td>30</td><td>100</td>
+        <td><input type="text" class="t"></td>
+        <td><input type="text" class="l"></td>
+        <td><input type="text" class="tot" readonly></td>
+    </tr>
+
+    <tr>
+        <td>CS6</td><td>Rust</td><td>70</td><td>30</td><td>100</td>
+        <td><input type="text" class="t"></td>
+        <td><input type="text" class="l"></td>
+        <td><input type="text" class="tot" readonly></td>
+    </tr>
+</table>
+
+<br>
+Total: <input type="text" id="total" readonly>
+Average: <input type="text" id="avg" readonly>
+<br><br>
+
+<button id="submit">Submit</button>
+
+<script>
+document.getElementById("submit").onclick=function(){
+    let t=document.querySelectorAll(".t");
+    let l=document.querySelectorAll(".l");
+    let tot=document.querySelectorAll(".tot");
+    let sum=0;
+    for(let i=0;i<6;i++){
+        let th=Number(t[i].value);
+        let lb=Number(l[i].value);
+        let total=th+lb;
+        if(total>100){alert("Total should be less than 100");return;}
+        tot[i].value=total;
+        sum+=total;
+    }
+    document.getElementById("total").value=sum;
+    document.getElementById("avg").value=(sum/6).toFixed(2);
+}
+</script>
+
+</div>
+</body>
+</html>

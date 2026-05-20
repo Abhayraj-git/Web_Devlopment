@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container
+        {
+            height: 300px;
+            width: 500px;
+            background-color: violet;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            align-content: center;
+        }
+        .box
+        {
+            height: 90px;
+            width: 90px;
+            margin: 5px;
+            border: 2px solid black;
+            
+        }
+        #box1
+        {
+            background-color: purple;
+        }
+        #box2
+        {
+            background-color: yellow;
+            flex-grow: 1;
+            
+        }
+        #box3
+        {
+            background-color: red;
+            /* align-self: flex-start; */
+            flex-shrink: 10;
+        }
+        #box4
+        {
+            background-color: brown;
+        }
+    </style>
+    <title>FlesxBox Direction</title>
+</head>
+<body>
+    <h1 style="text-align: center;"> FlexBox Direction</h1>
+    <div class="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <!-- <div id="box4" class="box">Item 4</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box4" class="box">Item 4</div>
+           -->
+    </div>
+</body>
+</html>

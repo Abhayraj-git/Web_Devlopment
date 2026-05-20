@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form action="/Abhay/">
+        <table border="1" style="background-color: rgb(228, 183, 127);" >
+            <caption>Registration form</caption>
+            <tr>
+                <td><label for="name">Enter your first name</label></td>
+                <td><input type="text" id="name" placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td><label for="last">Enter your last name</label></td>
+                <td><input type="text" id="last"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Enter your password</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="reEnter">Re-enter your password</label></td>
+                <td><input type="password" id="reEnter"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Enter your email</label></td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="number">Enter your mobile</label></td>
+                <td><input type="text" id="number"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Enter your address</label></td>
+                <td><textarea id="address" rows="4" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td>Select your gender:</td>
+                <td>
+                    <input type="radio" name="x" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="x" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select sports you love:</td>
+                <td>
+                    <input type="checkbox" id="Cricket">
+                    <label for="Cricket">Cricket</label>
+                    <input type="checkbox" id="football">
+                    <label for="football">Football</label>
+                    <input type="checkbox" id="hockey">
+                    <label for="hockey">Hockey</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="date">Select your date of birth</label></td>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>Select your country:</td>
+                <td>
+                    <select name="country">
+                        <option value="">--Select--</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="England">England</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="file">Upload image</label></td>
+                <td><input type="file" id="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

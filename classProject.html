@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art Maker</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    width: 320px;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.left-panel h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    gap: 15px;
+    margin-bottom: 35px;
+    justify-content: center;
+}
+
+.color {
+    width: 65px;
+    height: 65px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* BUTTONS */
+.btn {
+    width: 100%;
+    background: #e7e7e7;
+    border: none;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #dcdcdc;
+}
+
+/* GRID PANEL */
+.grid-container {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.grid {
+    width: 800px;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    border: 1px solid #d0d0d0;
+}
+
+.grid div {
+    border: 1px solid #d0d0d0;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Panel -->
+    <div class="left-panel">
+        <h2>PIXEL ART MAKER</h2>
+
+        <div class="colors">
+            <div class="color" style="background:#3d3f42;"></div>
+            <div class="color" style="background:#7d7f80;"></div>
+            <div class="color" style="background:#b54641;"></div>
+            <div class="color" style="background:#a35639;"></div>
+
+            <div class="color" style="background:#e3a129;"></div>
+            <div class="color" style="background:#e3d72a;"></div>
+            <div class="color" style="background:#45a659;"></div>
+            <div class="color" style="background:#4ca6b7;"></div>
+
+            <div class="color" style="background:#4b6ef5;"></div>
+            <div class="color" style="background:#874adf;"></div>
+            <div class="color" style="background:#d6499c;"></div>
+            <div class="color" style="background:#f28ea8;"></div>
+        </div>
+
+        <button class="btn">ERASER</button>
+        <button class="btn">DOWNLOAD</button>
+    </div>
+
+    <!-- Right Panel (Grid) -->
+    <div class="grid-container">
+        <div class="grid"></div>
+    </div>
+</div>
+
+</body>
+</html>

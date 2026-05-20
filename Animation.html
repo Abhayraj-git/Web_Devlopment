@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box
+        {
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            background-color: pink;
+            position: relative;
+            top: 10px;
+            left: 10px;
+                animation: rotatation 2s ease-in-out 0.5s;
+                animation-iteration-count: infinite;
+                animation-direction: reverse;
+        }
+        @keyframes rotatation {
+            from{left: 10px;}
+            to {left: 200px;}
+        }
+    </style>
+    <title> Animation </title>
+</head>
+<body>
+    <div class="box">
+        Box !
+    </div>
+</body>
+</html>

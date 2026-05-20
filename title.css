@@ -1,0 +1,56 @@
+*
+{
+margin: 0%;
+padding: 0%;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(114, 192, 192);
+}
+
+/* h1
+{
+margin: 0%;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: rgb(96, 188, 188);
+color: rgb(164, 123, 62);
+width: 75%;
+height: 50%;
+} */
+
+/* p
+{
+    color: rgb(172, 172, 229);
+    background-color: rgb(102, 84, 62);
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+} */
+ div
+ {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ #Box1
+ {
+    background-color: rgb(185, 75, 75);
+ }
+
+ #Box2
+ {
+    background-color: rgb(152, 107, 38);
+ }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        nav
+        {
+            height: 100px;
+            width: 400px;
+            background-color: aqua;
+            justify-items: center;
+            justify-content: space-around;
+            display: flex;
+        }
+        .abhay
+        {
+            height: 200px;
+            width: 600px;
+            border: 2px solid;
+            display: flex;
+           justify-content: center;
+            align-items: center;
+        }
+        #img
+        {
+            height: 56px;
+            width: 100px;
+            border: 2px solid;
+        }
+        .xy
+        {
+            height: 80px;
+            width: 500px;
+            border: 2px solid;
+            display: flex;
+            justify-content: space-around;
+        }
+        #box1
+        {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(141, 141, 12);
+            border: 3px solid;
+            flex-shrink: 0;
+        }
+        #second
+        {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(141, 141, 12);
+            border: 3px solid;
+            flex-shrink: 0;
+        }
+        #third
+        {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(141, 141, 12);
+            border: 3px solid;
+            flex-shrink: 5;
+            flex-grow: 5;
+        }
+        .gree
+        {
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            background-color: rgb(4, 60, 4);
+        }
+        @media screen and (min-width: 400px) {
+           .gree{
+            background-color: blue;
+           } 
+        }
+    </style>
+    <title>Practice set 6</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Home">Home</a>
+            <a href="contacts">Contact</a>
+            <a href="bottom">Bottom</a>
+            <a href="refresh">Refresh</a>
+            
+        </nav>
+    </header>
+    <div class="abhay">
+    <div id="img">
+        <img src="mynta.webp" width="100px" alt="">
+    </div>
+    </div>
+    <div class="xy">
+        <div id="box1">
+            Box 1
+        </div>
+        <div id="second">
+            Box 2
+        </div>
+        <div id="third">
+            Box 3
+        </div>
+    </div>
+    <div class="gree">
+        Media box
+    </div>
+</body>
+</html>

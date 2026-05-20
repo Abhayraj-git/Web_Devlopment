@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .pseudo
+        {
+            height: 40px;
+            width: 150px;
+            background-color: yellowgreen;
+            border: 2px solid;
+            border-radius: 10px;
+
+            
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0ms;
+        }
+        .pseudo:hover
+        {
+            height: 50px;
+            width: 200px;
+            background-color: blue;
+        }
+        .pseudo:active
+        {
+            background-color: red;
+        }
+    </style>
+    <title>Learning pseudo</title>
+</head>
+<body>
+    <button class="pseudo">
+        Click Me
+    </button>
+</body>
+</html>

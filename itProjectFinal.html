@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art Maker</title>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  background: #e92ae3;
+  color: white;
+  padding: 18px 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header .logo {
+  width: 60px;
+  border-radius: 8px;
+}
+
+.header .header-text {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+body {
+  background-image: url("https://img.craftpix.net/2023/04/Free-Nature-Backgrounds-Pixel-Art6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 35px;
+  margin-top: 200px;
+}
+
+.toolbox {
+  width: 300px;
+  height: 900px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.toolbox h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #002b5b;
+  letter-spacing: 0.5px;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.color {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: transform 0.2s;
+}
+
+.color:hover {
+  transform: scale(1.12);
+}
+
+.color-picker {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.color-picker input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #e1e7ef;
+  color: #002b5b;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #d3d9e0;
+}
+
+.canvas {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 900px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(30, 20px);
+  grid-template-rows: repeat(30, 20px);
+  gap: 0;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  transition: background 0.1s;
+}
+.footer {
+  width: 100%;
+  background: #002b5b;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 50px;
+  border-radius: 6px 6px 0 0;
+}
+
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="https://tse3.mm.bing.net/th/id/OIP.KQCns1qUKavS9T-kmYN_gAHaEL?pid=Api&P=0&h=180"
+        alt="College Logo"
+        class="logo"
+      />
+      <span class="header-text">INDIAN INSTITUTE OF TECHNOLOGY</span>
+    </div>
+
+    <div class="container">
+      <div class="toolbox">
+        <h2>PIXEL ART MAKER</h2>
+
+        <div class="colors">
+          <label class="color-picker">
+            <input type="color" />
+          </label>
+
+          <div class="color" style="background: #333"></div>
+          <div class="color" style="background: #777"></div>
+          <div class="color" style="background: #cc3333"></div>
+          <div class="color" style="background: #8b3e2f"></div>
+
+          <div class="color" style="background: #e79b30"></div>
+          <div class="color" style="background: #edd22a"></div>
+          <div class="color" style="background: #3cab5b"></div>
+          <div class="color" style="background: #4bb2c5"></div>
+          <div class="color" style="background: #3c6df0"></div>
+
+          <div class="color" style="background: #7b3ff0"></div>
+          <div class="color" style="background: #d8479a"></div>
+          <div class="color" style="background: #f58ab0"></div>
+          <div class="color" style="background: #000000"></div>
+          <div
+            class="color"
+            style="background: #ffffff; border: 1px solid #ccc"
+          ></div>
+        </div>
+
+        <button class="btn">ERASER</button>
+        <button class="btn">DOWNLOAD</button>
+      </div>
+
+      <div class="canvas">
+        <div class="grid">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+       <p class="guidance">
+  This project was carried out under the guidance of Dr. Goutam Mali, Assistant Professor, IIIT Kottayam.
+</p>
+
+        <a href="mailto:goutam@iiitkottayam.ac.in">goutam@iiitkottayam.ac.in</a>
+      </p>
+    </footer>
+  </body>
+</html>
