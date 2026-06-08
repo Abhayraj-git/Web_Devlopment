@@ -1,0 +1,11 @@
+let a = 2;
+let b = 5;
+console.log(a&b);
+console.log(a|b);
+console.log(~(0));
+console.log(a^b);
+console.log(a^a);
+console.log(a<<1);
+console.log(b<<1);
+console.log(b>>1);
+console.log(a>>1);
