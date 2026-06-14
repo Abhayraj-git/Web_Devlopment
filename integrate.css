@@ -1,0 +1,21 @@
+.heading,
+.row {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.heading {
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+.heading li,
+.row li {
+  flex: 1;
+}
+
+.row {
+  border-bottom: 1px solid #ccc;
+}
